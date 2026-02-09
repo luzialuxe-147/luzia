@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Luzia Luxe | Luxury Furniture</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="main-header">
+    <div class="logo">Luzia Luxe</div>
+  
+    <nav class="header-actions">
+      <a href="https://wa.me/+201025637798" class="whatsapp-btn" target="_blank" aria-label="WhatsApp">
+        <svg viewBox="0 0 32 32" class="wa-icon">
+          <path fill="currentColor"
+            d="M16.003 3C9.383 3 4 8.383 4 15.003c0 2.65.87 5.1 2.34 7.08L4 29l7.15-2.27a11.95 11.95 0 004.85 1.03C22.62 27.76 28 22.38 28 15.76 28 9.38 22.62 3 16 3z"/>
+        </svg>
+      </a>
+    </nav>
+  </header>
+  
+<!-- Language Toggle -->
+<button id="langToggle">AR</button>
+
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/+201025637798" id="whatsappFloat">WhatsApp</a>
+
+<!-- HERO -->
+<section class="hero">
+
+  <!-- الفيديو -->
+  <video autoplay muted loop playsinline class="hero-video">
+    <source src="assets/videos/hero.mp4" type="video/mp4">
+  </video>
+
+  <!-- المحتوى فوق الفيديو -->
+  <div class="hero-content">
+    <h1>Luzia Luxe</h1>
+    <p>Bold. Modern. Handcrafted Furniture.</p>
+    <p class="brand-slogan">Excellence You Deserve</p>
+
+    <a href="#custom" class="btn"  data-en="Customize Your style" data-ar="تخصيص ذوقي">Customize Your Piece</a>
+  </div>
+
+</section>
+
+
+<!-- WHY -->
+<section class="why">
+  <h2 data-en="Why Luzia Luxe" data-ar="لماذا لوزيا لوكس">Why Luzia Luxe</h2>
+  <div class="features">
+    <div>Premium Materials</div>
+    <div>Custom Design</div>
+    <div>Handcrafted Quality</div>
+  <div> Where Quality Meets Elegance</div>
+  <div> Exceptional Craftsmanship</div>
+  <div> </div>
+  </div>
+</section>
+<!-- PORTFOLIO -->
+<section class="portfolio">
+  <h2 data-en="Our Work" data-ar="أعمالنا">Our Work</h2>
+
+  <!-- فلاتر الأقسام -->
+  <div class="category-filters">
+
+    <div class="category-card" data-filter="modern-sofa">
+      <img src="assets/images/living-cover.jpg" alt="Modern Sofa">
+      <span>Modern Sofa</span>
+    </div>
+  
+    <div class="category-card" data-filter="bedroom">
+      <img src="assets/images/bedroom-cover.jpg" alt="Bedroom">
+      <span>Bedroom</span>
+    </div>
+  
+    <div class="category-card" data-filter="office">
+      <img src="assets/images/office-cover.jpg" alt="Office">
+      <span>Office</span>
+    </div>
+  
+    <div class="category-card" data-filter="all">
+      <span>All</span>
+    </div>
+
+  </div>
+  
+  <!-- معرض الصور -->
+  <div class="gallery">
+
+    <div class="item modern-sofa">
+      <img src="assets/images/sofa-1.jpeg" alt="Modern Sofa">
+    </div>
+    <div class="item modern-sofa">
+      <img src="assets/images/sofa-2.jpeg" alt="Modern Sofa">
+    </div>
+    <div class="item modern-sofa">
+      <img src="assets/images/sofa-3.jpeg" alt="Modern Sofa">
+    </div>
+    <div class="item modern-sofa">
+      <img src="assets/images/sofa-4.jpeg" alt="Modern Sofa">
+    </div>
+    <div class="item modern-sofa">
+      <img src="assets/images/sofa-5.jpeg" alt="Modern Sofa">
+    </div>
+    <div class="item modern-sofa">
+      <img src="assets/images/sofa-6.jpeg" alt="Modern Sofa">
+    </div>
+    <div class="item modern-sofa">
+      <img src="assets/images/sofa-7.jpeg" alt="Modern Sofa">
+    </div>
+  <!--
+    <div class="item bedroom">
+      <img src="assets/images/bedroom-1.jpg" alt="Bedroom Furniture">
+    </div>
+  
+    <div class="item office">
+      <img src="assets/images/office-1.jpg" alt="Office Furniture">
+    </div>
+
+    <!-- مثال على إضافات مستقبلية -->
+    <!--
+    <div class="item modern-sofa">
+      <img src="assets/images/living-2.jpg" alt="Modern Sofa">
+    </div>
+    <div class="item bedroom">
+      <img src="assets/images/bedroom-2.jpg" alt="Bedroom Furniture">
+    </div>
+    <div class="item office">
+      <img src="assets/images/office-2.jpg" alt="Office Furniture">
+    </div>
+    -->
+
+  </div>
+</section>
+
+
+<!-- CUSTOMIZATION -->
+<section class="custom" id="custom">
+  <h2 data-en="Customize Your Furniture"
+      data-ar="تخصيص الأثاث">Customize Your Furniture</h2>
+
+  <form id="customForm">
+    <input type="text" placeholder="Furniture Type" required>
+    <input type="text" placeholder="Color">
+    <input type="text" placeholder="Dimensions">
+    <textarea placeholder="Notes"></textarea>
+    <button type="submit"
+      data-en="Send via WhatsApp"
+      data-ar="إرسال عبر واتساب">
+      Send via WhatsApp
+    </button>
+  </form>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials">
+  <h2 data-en="Client Feedback"
+      data-ar="آراء العملاء">Client Feedback</h2>
+
+  <p class="note">
+    (Link your Google / Microsoft Form here later)
+  </p>
+
+  <div class="reviews">
+    <blockquote>“Amazing quality and finish.”</blockquote>
+    <blockquote>“Exactly what I imagined.”</blockquote>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<footer class="main-footer">
+
+  <p class="footer-title">Follow Luzia Luxe</p>
+
+  <div class="social-icons">
+
+    <a href="https://wa.me/+201025637798" aria-label="WhatsApp" class="social whatsapp">
+      <svg viewBox="0 0 32 32">
+        <path fill="currentColor"
+          d="M16 3C9.4 3 4 8.4 4 15c0 2.6.8 5 2.2 7L4 29l7.2-2.2c2 1.1 4.3 1.7 6.8 1.7C24.6 28.5 30 23.1 30 16.5S24.6 3 16 3z"/>
+      </svg>
+    </a>
+
+    <a href="https://www.instagram.com/luzia_luxe_1/" aria-label="Instagram" class="social instagram">
+      <svg viewBox="0 0 24 24">
+        <path fill="currentColor"
+          d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm5 5a5 5 0 100 10 5 5 0 000-10z"/>
+      </svg>
+    </a>
+
+    <a href="https://www.facebook.com/profile.php?id=61582959826213" aria-label="Facebook" class="social facebook">
+      <svg viewBox="0 0 24 24">
+        <path fill="currentColor"
+          d="M13 22V12h3l1-4h-4V6c0-1 .3-2 2-2h2V0h-3c-3 0-5 2-5 5v3H6v4h3v10h4z"/>
+      </svg>
+    </a>
+
+  </div>
+
+  <p class="copyright">
+    © 2026 Luzia Luxe — All Rights Reserved
+  </p>
+
+</footer>
+
+
+<script src="js/main.js"></script>
+</body>
+</html>
